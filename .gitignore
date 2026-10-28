@@ -1,0 +1,28 @@
+
+# Private configuration and secrets
+.env
+.env.*
+!.env.example
+config.php
+config.local.php
+secrets.php
+
+# Database backups
+*.sql
+*.sql.gz
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+# Local database configuration
+/config/database.php
+
+# Database backups
+/database/
+*.sql
+*.sql.gz
