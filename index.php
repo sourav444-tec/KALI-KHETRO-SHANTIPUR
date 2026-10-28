@@ -28,9 +28,7 @@ $pujaRatings = []; foreach ($ratingRows as $rr) { $pujaRatings[(int)$rr['puja_id
 <main>
 <section class="hero" id="home">
   <div class="hero-slides" aria-hidden="true">
-    <div class="hero-slide active" style="background-image:linear-gradient(90deg,rgba(20,4,7,.94),rgba(20,4,7,.35)),url('assets/images/hero-1.jpg')"></div>
-    <div class="hero-slide" style="background-image:linear-gradient(90deg,rgba(20,4,7,.94),rgba(20,4,7,.35)),url('assets/images/hero-2.jpg')"></div>
-    <div class="hero-slide" style="background-image:linear-gradient(90deg,rgba(20,4,7,.94),rgba(20,4,7,.35)),url('assets/images/hero-3.jpg')"></div>
+    <div class="hero-slide hero-main active"></div>
   </div>
   <div class="hero-content">
     <p class="eyebrow" data-en="THE SPIRIT OF SHANTIPUR" data-bn="শান্তিপুরের ঐতিহ্য ও ভক্তি">শান্তিপুরের ঐতিহ্য ও ভক্তি</p>
@@ -38,7 +36,6 @@ $pujaRatings = []; foreach ($ratingRows as $rr) { $pujaRatings[(int)$rr['puja_id
     <p class="hero-copy" data-en="Explore historic pujas, find your route, and plan a memorable night of devotion." data-bn="ঐতিহ্যবাহী কালীপুজো খুঁজুন, পথ চিনে নিন এবং সাজিয়ে তুলুন আপনার পুজো পরিক্রমা।">ঐতিহ্যবাহী কালীপুজো খুঁজুন, পথ চিনে নিন এবং সাজিয়ে তুলুন আপনার পুজো পরিক্রমা।</p>
     <div class="hero-actions"><a class="btn btn-gold" href="#pujas" data-en="Explore Pujas →" data-bn="পুজো খুঁজুন →">পুজো খুঁজুন →</a><a class="btn btn-glass" href="#services" data-en="Plan your route" data-bn="পথ পরিকল্পনা করুন">পথ পরিকল্পনা করুন</a></div>
   </div>
-  <div class="slide-dots"><button class="dot active" data-slide="0" aria-label="Slide 1"></button><button class="dot" data-slide="1" aria-label="Slide 2"></button><button class="dot" data-slide="2" aria-label="Slide 3"></button></div>
   <div class="hero-stamp">নদিয়া · পশ্চিমবঙ্গ<br><small>ঐতিহ্যের আলোয় শান্তিপুর</small></div>
 </section>
 

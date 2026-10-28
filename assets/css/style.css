@@ -12,3 +12,10 @@
 
 /* Feedback and Puja rating additions */
 .rating-summary{display:flex;align-items:center;gap:10px;margin:10px 0 4px;color:var(--gold2);font-size:13px}.rating-summary small{color:var(--muted);font-size:11px}.puja-rating-form{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 0 4px;border-bottom:1px solid var(--line)}.puja-rating-form label,.feedback-form label{font-size:12px;color:var(--muted);width:100%}.puja-rating-form select,.feedback-form select{background:var(--surface);border:1px solid var(--line);border-radius:9px;color:var(--text);padding:9px;font-size:12px;max-width:100%}.feedback-form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.feedback-form textarea,.feedback-form button,.feedback-form label,.feedback-form select{grid-column:1/-1}.feedback-form textarea{min-height:110px;resize:vertical}.feedback-form input:focus,.feedback-form textarea:focus,.feedback-form select:focus{outline:2px solid var(--gold);outline-offset:1px}.feedback-list article{border:1px solid var(--line);background:var(--surface);padding:16px;border-radius:12px;margin:10px 0}.feedback-list article small{display:block;color:var(--muted);font-size:11px}.feedback-list article p{white-space:normal;overflow-wrap:anywhere}@media(max-width:620px){.feedback-form{grid-template-columns:1fr}.puja-rating-form{align-items:flex-start}.puja-rating-form label{width:100%}}
+
+
+/* Main homepage hero: user-provided Kali Mata photograph */
+.hero{min-height:600px;background:#16080b}
+.hero-slide.hero-main{opacity:1;transform:scale(1);background-image:linear-gradient(90deg,rgba(16,5,8,.94) 0%,rgba(16,5,8,.78) 34%,rgba(16,5,8,.25) 67%,rgba(16,5,8,.08) 100%),url('../images/kali-mata-hero.jpg')!important;background-size:cover;background-position:center 42%;}
+.hero-content{max-width:720px}
+@media(max-width:760px){.hero{min-height:570px}.hero-slide.hero-main{background-image:linear-gradient(90deg,rgba(16,5,8,.88) 0%,rgba(16,5,8,.64) 48%,rgba(16,5,8,.3) 100%),url('../images/kali-mata-hero.jpg')!important;background-position:62% center}.hero-content{padding:55px 22px 65px}.hero h1{max-width:520px}}
