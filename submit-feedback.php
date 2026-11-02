@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/config/database.php';
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { header('Location: index.php#feedback'); exit; }
+verify_csrf();
 if (isset($_POST['website']) && trim((string)$_POST['website']) !== '') { header('Location: index.php?feedback=sent#feedback'); exit; }
 $name = trim($_POST['name'] ?? '');
 $email = trim($_POST['email'] ?? '');

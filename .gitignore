@@ -1,28 +1,20 @@
-
-# Private configuration and secrets
+# Local secrets/configuration (never commit credentials)
 .env
 .env.*
 !.env.example
-config.php
-config.local.php
+config/database.php
+config/config.local.php
 secrets.php
 
-# Database backups
-*.sql
-*.sql.gz
+# Runtime uploads (keep placeholder files only)
+uploads/*/*
+!uploads/*/.gitkeep
+!uploads/*/.htaccess
 
-# Logs and temporary files
+# Backups and logs
 *.log
-tmp/
-temp/
-
-# Operating system files
+*.sql.gz
+*.zip
+*.bak
 .DS_Store
 Thumbs.db
-# Local database configuration
-/config/database.php
-
-# Database backups
-/database/
-*.sql
-*.sql.gz

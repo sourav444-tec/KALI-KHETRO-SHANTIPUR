@@ -1,0 +1,20 @@
+KALI KHETRO SANTIPUR — SECURITY UPDATE
+
+Applied in this package:
+- Secure session cookie settings and basic security response headers.
+- CSRF validation added to public feedback/rating and one-time admin setup.
+- Logout changed from GET link to POST + CSRF form.
+- Upload folders block PHP/script execution and directory listing.
+- config/ and database/ folders deny direct web access.
+- .gitignore updated so real DB credentials stay local while SQL source files can be committed.
+- Added config/database.example.php template (no credentials).
+
+IMPORTANT BEFORE LIVE DEPLOYMENT:
+1. Back up your current project folder and MySQL database.
+2. Keep your real config/database.php credentials locally; DO NOT upload or commit that file to GitHub. On hosting, create config/database.php using your hosting DB details.
+3. Verify that your hosting supports Apache .htaccess rules.
+4. Delete setup-admin.php immediately after creating the first admin account.
+5. Change any default/weak admin password. Use HTTPS.
+6. Run the smoke tests: homepage, admin login, add/edit/delete Puja, image upload, feedback and rating.
+
+This is a focused hardening update, not a formal penetration test or guarantee of security.

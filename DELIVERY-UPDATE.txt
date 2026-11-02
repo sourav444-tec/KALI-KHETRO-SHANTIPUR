@@ -1,0 +1,20 @@
+KALI KHETRO SANTIPUR — DELIVERY UPDATE
+
+Changes in this package:
+- Replaced the old trident text glyph in the header and footer with the user-provided gold Kali emblem image.
+- Prepared the emblem as a transparent PNG and optimized it for web use.
+- Simplified the root .htaccess to avoid the HTTP 500 observed on the local XAMPP server.
+- Kept separate protection files in config/, database/, and uploads/.
+
+Install on XAMPP:
+1. Back up your existing project folder and export your database first.
+2. Extract this ZIP. Copy the contents of KALI-KHETRO-SANTIPUR-SECURITY-UPDATED into C:\xampp\htdocs\KALI-KHETRO-SANTIPUR, replacing files when prompted.
+3. Preserve your existing config/database.php credentials if they differ from the included local config.
+4. Open http://localhost/KALI-KHETRO-SANTIPUR/ and hard-refresh (Ctrl+F5).
+5. Check the header and footer emblem, then test feedback, rating, admin CRUD, image uploads, and logout.
+
+Important:
+- Do not upload config/database.php credentials to a public GitHub repository.
+- Delete setup-admin.php after the first admin account has been created.
+- Manual browser/database tests are still required; PHP syntax checks do not prove every feature works.
+- If .htaccess still causes a server error on your host, rename only the root .htaccess temporarily and inspect that host's error log.

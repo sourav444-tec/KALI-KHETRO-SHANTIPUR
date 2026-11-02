@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/config/database.php';
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { header('Location: index.php#pujas'); exit; }
+verify_csrf();
 $pujaId = filter_input(INPUT_POST, 'puja_id', FILTER_VALIDATE_INT);
 $rating = filter_input(INPUT_POST, 'rating', FILTER_VALIDATE_INT);
 if (!$pujaId || !$rating || $rating < 1 || $rating > 5) { header('Location: index.php?rating=invalid#pujas'); exit; }
